@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="150dp"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="117dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:text="What IP (hostname) would you like to ping?"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="90dp" />
+
+        <EditText
+            android:id="@+id/hostNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="IP address or hostname"
+            android:inputType="textPersonName"
+            android:paddingBottom="20dp"
+            android:password="false"
+            android:phoneNumber="false"
+            android:textAlignment="center"
+            tools:layout_editor_absoluteX="84dp"
+            tools:layout_editor_absoluteY="139dp" />
+
+        <TextView
+            android:id="@+id/latencyTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="pingOnClick"
+            android:text="ping"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/logButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showLogClick"
+            android:text="Show log" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
