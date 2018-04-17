@@ -1,0 +1,3 @@
+vg.no 14ms
+google.pl 42ms
+nrk.no 32ms
